@@ -1,0 +1,43 @@
+{
+  "name": "lineman-vulcanize",
+  "description": "A Vulcanize plugin for Lineman",
+  "version": "0.0.1",
+  "homepage": "https://github.com/dcunited001/lineman-vulcanize",
+  "author": {
+    "name": "David Conner",
+    "email": "dconner.pro@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dcunited001/lineman-vulcanize.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dcunited001/lineman-vulcanize/issues"
+  },
+  "dependencies": {
+    "coffee-script": "~1.6.3",
+    "grunt-vulcanize": "~0.4.1"
+  },
+  "peerDependencies": {
+    "lineman": ">= 0.27.0"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.2",
+    "grunt-release": "^0.7.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://dcunited001.mit-license.org"
+    }
+  ],
+  "keywords": [
+    "lineman",
+    "linemanplugin",
+    "plugin",
+    "vulcanize",
+    "polymer",
+    "component",
+    "webcomponent"
+  ]
+}
