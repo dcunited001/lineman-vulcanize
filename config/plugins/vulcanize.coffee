@@ -2,7 +2,8 @@ module.exports = (lineman) ->
   app = lineman.config.application
 
   config:
-    loadNpmTasks: app.loadNpmTasks.concat("grunt-vulcanize")
+    loadNpmTasks: lineman.config.application.loadNpmTasks.concat("grunt-vulcanize")
+    prependTasks: lineman.config.application.prependTasks.common.concat("vulcanize")
 
     vulcanize:
       options:
@@ -11,12 +12,15 @@ module.exports = (lineman) ->
         strip: false
         exports:
           imports: []
+          scripts: []
+          styles: []
 
     watch:
       vulcanize:
-        files: []
-        tasks: []
+        files: ["app/vulcanize/**.html"]
+        tasks: ["vulcanize"]
 
   files:
     vulcanize:
-      'build.html': 'index.html'
+      src: "app/vulcanize/build.html"
+      dest: "generated/vulcanize/build.html"
